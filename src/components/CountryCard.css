@@ -1,0 +1,97 @@
+.countryCard {
+  background-color: #d4d6fd;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 500px;
+  max-height: 100vh;
+  min-width: 400px;
+  max-width: 63vw;
+  width: 100%;
+  margin: 1.5em;
+  border-radius: 10px;
+}
+
+.title {
+  grid-area: 1 / 1 / 1 / 3;
+  justify-self: center;
+  font-size: 50px;
+  max-width: 70%;
+  text-align: center;
+}
+.flagPicture {
+  grid-area: 2 / 1 / 2 / 3;
+  justify-self: center;
+  align-self: center;
+  max-height: 100%;
+}
+
+.paragraph {
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
+  text-overflow: ellipsis;
+}
+
+.favoriteButton {
+  grid-area: 1 / 2 / 1 / 3;
+  z-index: 1;
+  align-self: center;
+  justify-self: end;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.leftButton {
+  grid-area: 2 / 1 / 2 / 2;
+  justify-self: start;
+  border: none;
+  padding: 20px;
+  font-size: 3em;
+  background-color: transparent;
+}
+
+.leftButton:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.rightButton {
+  grid-area: 2 / 2 / 2 / 2;
+  justify-self: end;
+  border: none;
+  padding: 20px;
+  font-size: 3em;
+  background-color: transparent;
+}
+.rightButton:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .countryCard {
+    min-width: 80vw;
+    max-width: 93vw;
+    min-height: 40vh;
+    max-height: 55vh;
+    margin-top: 0;
+    width: auto;
+  }
+
+  .title {
+    font-size: 37px;
+    max-width: 65%;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .flagPicture {
+    max-width: 50%;
+  }
+}

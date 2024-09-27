@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FavoriteButton Snapshot Tests > renders correctly when it is a favorite 1`] = `
+<DocumentFragment>
+  <button
+    class="favoriteButton"
+  >
+    ♥
+  </button>
+</DocumentFragment>
+`;
+
+exports[`FavoriteButton Snapshot Tests > renders correctly when not a favorite 1`] = `
+<DocumentFragment>
+  <button
+    class="favoriteButton"
+  >
+    ♡
+  </button>
+</DocumentFragment>
+`;

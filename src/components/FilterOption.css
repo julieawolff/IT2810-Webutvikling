@@ -1,0 +1,19 @@
+.filterOption {
+  background-color: #ffffff;
+  border: 3px solid transparent;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.filterOptionLabel {
+  font-size: 16px;
+  color: #333;
+  margin-left: 5px;
+}
+
+.filterOption:hover {
+  font-weight: bold;
+}

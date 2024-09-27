@@ -1,0 +1,22 @@
+.outerDiv {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 100vw;
+  height: 92vh;
+  background-color: #dfe4ff;
+}
+
+@media (max-width: 768px) {
+  .outerDiv {
+    flex-direction: column;
+    height: 98vh;
+    width: 100vw;
+  }
+}
+
+@media (max-height: 530px) {
+  .outerDiv {
+    height: fit-content;
+  }
+}

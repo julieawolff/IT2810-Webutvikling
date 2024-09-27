@@ -1,0 +1,28 @@
+.filterOptionOverviewBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #d4d6fd;
+  margin: 1.5em;
+  padding: 1em 2em 2em 2em;
+  border-radius: 10px;
+  overflow-y: auto;
+  min-width: 25%;
+  max-width: 40%;
+  min-height: 40%;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .filterOptionOverviewBox {
+    max-width: 77vw;
+    min-height: 22vh;
+    max-height: 25vh;
+    min-width: 69vw;
+  }
+}
+
+@media (max-height: 530px) {
+  .filterOptionOverviewBox {
+    max-height: 450px;
+  }
+}
